@@ -1,0 +1,36 @@
+float temp;
+int temppin=0;
+int buzzer=10;
+int led=12;
+
+void setup()
+{
+	pinMode(buzzer,OUTPUT);
+  	Serial.begin(9600);
+  beep();
+  
+}
+void loop()
+{
+  noTone(buzzer);
+  temp=analogRead(temppin);
+  temp=temp*0.48828125;
+  if(temp>28)
+  {
+  	beep();
+    digitalWrite(led,HIGH);
+  }
+  Serial.print("Temp:");
+  Serial.print(temp);
+  Serial.print("c");
+  Serial.println();
+  delay(1000);
+}
+
+void beep()
+{
+	tone(buzzer,50);
+  	delay(1000);
+  	noTone(buzzer);
+  delay(1000);
+}
