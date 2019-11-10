@@ -1,0 +1,13 @@
+void setup()
+{
+  pinMode(A2,INPUT);
+  Serial.begin(9600);//Syncing with arduino
+}
+
+void loop()
+{
+   int temp;
+  temp =analogRead(A2);
+  Serial.print(temp);
+  Serial.print(" ");
+}
