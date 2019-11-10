@@ -1,0 +1,27 @@
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(13, INPUT);
+  serial.begin(9600);
+}
+
+void loop()
+{
+  int val;
+  val=digitalRead(5);
+  Serial.println(val);
+  if(val==0)
+  {
+  	Serial.print("No Object Detected");
+    digital.write(2,HIGH);
+    delay(1000);
+    tone(7,2000,2000);
+  }
+  else
+  {
+  	Serial.print("Interruption");
+    delay(1000);
+  }
+}
