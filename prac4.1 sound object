@@ -1,10 +1,11 @@
+
 void setup()
 {
   pinMode(13, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(13, INPUT);
-  serial.begin(9600);
+  pinMode(8, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(5, INPUT);
+  Serial.begin(9600);
 }
 
 void loop()
@@ -15,7 +16,7 @@ void loop()
   if(val==0)
   {
   	Serial.print("No Object Detected");
-    digital.write(2,HIGH);
+    digitalWrite(2,HIGH);
     delay(1000);
     tone(7,2000,2000);
   }
