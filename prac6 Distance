@@ -1,0 +1,22 @@
+const int trigpin=11;
+const int echopin=4;
+int duration;
+int cm;
+void setup()
+{
+	pinMode(trigpin,OUTPUT);
+  	pinMode(echopin, INPUT);
+  	Serial.begin(9600);
+}
+void loop()
+{
+
+		digitalWrite(trigpin,LOW);
+  		
+		digitalWrite(trigpin,HIGH);
+  		delayMicroseconds(5);
+  duration=pulseIn(echopin,HIGH);
+  cm=(duration/2)/29.1;
+  Serial.println(cm);
+  
+}
