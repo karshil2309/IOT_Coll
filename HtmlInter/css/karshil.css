@@ -1,0 +1,27 @@
+/* body{
+  background-color: green;
+} */
+  .gangaprasad a{width: 50px;height: 20px;display: block;background:url('../Images/icon.png');}
+.socialmedia  li {display: inline-block;}
+
+/* a{background:url('../Images/icon.png');} */
+  /* vertical-align: middle;
+     -o-transition: all .3s;
+     -moz-transition: all .3s;
+     -webkit-transition: all .3s;
+     -ms-transition: all .3s;
+  */
+
+  .socialmedia a:hover{background:url('../Images/icon.png') 0 -110px;}
+.socialmedia  a {margin-left:  20px;}
+  .gangaprasad1 a{width: 10px;height:10px;display: block;background:url('../Images/icon.png'); background-position:-105px -210px;}
+
+  .gangaprasad1 a:hover{background:url('../Images/icon.png') -105px -110px;}
+
+  .gangaprasad2 a{width: 10px;height: 10px;display: block; background:url('../Images/icon.png'); background-position:-210px -210px;}
+
+  .gangaprasad2 a:hover{background:url('../Images/icon.png') -210px -110px;}
+
+  .gangaprasad3 a{width: 10px;height: 10px;display: block; background:url('../Images/icon.png');background-position: -315px -210px;}
+
+  .gangaprasad3 a:hover{background:url('../Images/icon.png') -315px -110px;}
